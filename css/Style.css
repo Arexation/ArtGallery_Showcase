@@ -1,0 +1,243 @@
+* {
+    border-radius: 2vmin;
+}
+/* scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* scrollbar */
+select,
+select:hover,
+select:active,
+select:visited,
+select:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 4vmin;
+    margin-block: 1em;
+}
+
+select::-webkit-scrollbar {
+    width: .8vw;
+    margin-block: 1em;
+}
+
+::-webkit-scrollbar {
+    background: #272727;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4af37a4;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(104deg, rgba(255,255,255,1) 48%, rgba(192,192,192,1) 71%);
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+#menu {
+    background-color: #272727;
+    border-radius: 0 2vmin 2vmin 0;
+}
+#genreListing h2 , #artistListing h2{
+    margin: 3vmin 0;
+    color: #D4AF37;
+}
+
+.header{
+    background-color: #d4af37c1;
+    padding: 1vmin 0;
+    transition: .2s ease-in;
+}
+
+.header a{
+    font-weight: 700;
+    color: #272727 !important;
+    font-size: 2.5vmin !important;
+
+}
+
+.header:hover{
+    color: #e9b508c1;
+    background-color: #000000;
+    padding: 1vmin 0;
+}
+
+.header:hover a{
+    color: #e9b508c1 !important;
+}
+
+#menu a {
+    color: #f5f4f3;
+    font-size: 2vmin;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+
+.painting-item {
+    padding: 2vmin;
+    background-color: #272727;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3vmin;
+    box-shadow: .3rem .4rem .8rem rgba(0, 0, 0, 0.5);
+}
+.painting-img{
+    transition: .13s ease-in-out;
+}
+.painting-img:hover{
+    border: 1px solid #D4AF37;
+}
+
+.painting-item a {
+    font-size: 3vmin;
+    text-decoration: none;
+    color: #f5f4f3;
+    transition: .2s ease-in;
+}
+
+.painting-item a:hover {
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+li{
+    border-radius: 4vmin;
+    transition: .2s ease-in;
+    list-style-type: none;
+    font-weight: 700;
+    padding: 2vmin;
+    margin: 1vmin;
+    background-color: #faefd673;
+    box-shadow: .05rem .05rem .2rem rgba(255, 255, 255, 0.2);
+
+}
+
+li:hover{
+    background-color: #d4af37c1;
+    color: #000
+    
+}
+
+#genreListing li:hover a {
+    text-decoration: none;
+    color: #272727;
+} 
+
+.singlePaintCont, .singleArtistCont{
+    text-decoration: none;
+    margin-top: 3vmin;
+    padding: 5vmin;
+    background: rgb(192,192,192);
+    background: linear-gradient(158deg, rgba(192,192,192,1) 16%, rgba(39,39,39,1) 85%);
+    box-shadow: .3rem .4rem .8rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+.singlePainting h1 {
+margin-top: 3vmin;
+color: #D4AF37;
+}
+.singleArtistCont h1{
+    margin-bottom: 3vmin;
+    color: #272727; 
+}
+img{
+    box-shadow: .3rem .4rem .8rem rgba(0, 0, 0, 0.5);
+}
+
+.singlePainting p, .singleArtistCont p{
+color: #f5f4f3;
+margin: 5vmin 0;
+font-size: 3vmin;
+}
+
+.singlePaintCont a , .singleArtistCont a{
+    color: #D4AF37;
+}
+
+.singlePaintCont a:hover ,.singleArtistCont a:hover{
+    text-decoration: none;
+    color: #f5f4f3;
+}
+
+.singlePaintCont .description, .singleArtistCont .description{
+    width: 80%;
+    font-weight: 600;
+    color:#272727;
+    background-color: #f5f4f3;
+    box-shadow: .3rem .4rem .8rem rgba(0, 0, 0, 0.5);
+    padding: 4vmin 5vmin;
+    margin: 0 auto;
+}
+
+.painting-info{
+    margin: auto;
+}
+
+
+.singlePaintCont b{
+    color: #272727;
+}
+.wiki{
+    font-size: 2.5vmin;
+    font-weight: 700;
+    color: #272727 !important;
+    text-decoration: none;
+    background: rgb(245, 244, 243);
+    background: linear-gradient(154deg, rgba(245, 244, 243,1) 28%, rgba(192,192,192,1) 51%);
+    padding: 2vmin 2vmin;
+    box-shadow: .3rem .4rem .8rem rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in;
+}
+
+.wiki span{
+    transition: 0.2s ease-in;
+    color: #36c;
+}
+
+.wiki:hover{
+    background: rgb(39, 39, 39);
+    text-decoration: none;
+    color: #f5f4f3 !important;
+}
+
+.wiki:hover span{
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+.back{
+    text-decoration: none !important;
+    margin: 0 auto 5vmin auto;
+    color: #f5f4f3;
+}
+.back .header{
+    margin: 5vmin auto;
+    width: 40%;
+}
+
+.bottomName{
+    margin: 5vmin 0;
+    font-weight: 700;
+}
+
+.date{
+    color: #D4AF37 !important;
+    font-weight: 700;
+}
